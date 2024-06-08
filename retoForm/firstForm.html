@@ -16,7 +16,7 @@
     <main>
       <header><h1>Formulario de Inscripción</h1></header>
 
-      <form action="" method="get" class="form-container">
+      <form method="get" class="form-container">
         <fieldset class="fieldset-personal-data">
           <legend>Datos Personales</legend>
           <label
@@ -44,67 +44,58 @@
             >Dirección:<input
               type="text"
               name="userAddress"
-              placeholder="Cr 83B # 27a -51"
+              placeholder="CR 00 CL 00 -00"
           /></label>
 
           <section class="location">
-            <label for="">País</label>
+            <label>País</label>
             <select name="country" required>
               <option value="Colombia">Colombia</option>
             </select>
-            <label for="">Departamento</label>
+            <label>Departamento</label>
             <select name="departamentos">
-              <option value="Amazonas" name="Amazonas">Amazonas</option>
-              <option value="Antioquia" name="Antioquia">Antioquia</option>
-              <option value="Arauca" name="Arauca">Arauca</option>
-              <option value="Atlántico" name="Atlántico">Atlántico</option>
-              <option value="Bolívar" name="Bolívar">Bolívar</option>
-              <option value="Boyacá" name="Boyacá">Boyacá</option>
-              <option value="Caldas" name="Caldas">Caldas</option>
-              <option value="Caquetá" name="Caquetá">Caquetá</option>
-              <option value="Casanare" name="Casanare">Casanare</option>
-              <option value="Cauca" name="Cauca">Cauca</option>
-              <option value="Cesar" name="Cesar">Cesar</option>
-              <option value="Chocó" name="Chocó">Chocó</option>
-              <option value="Córdoba" name="Córdoba">Córdoba</option>
-              <option value="Cundinamarca" name="Cundinamarca">
-                Cundinamarca
-              </option>
-              <option value="Guainía" name="Guainía">Guainía</option>
-              <option value="Guaviare" name="Guaviare">Guaviare</option>
-              <option value="Huila" name="Huila">Huila</option>
-              <option value="La Guajira" name="La Guajira">La Guajira</option>
-              <option value="Magdalena" name="Magdalena">Magdalena</option>
-              <option value="Meta" name="Meta">Meta</option>
-              <option value="Nariño" name="Nariño">Nariño</option>
-              <option value="Norte de Santander" name="Norte de Santander">
-                Norte de Santander
-              </option>
-              <option value="Putumayo" name="Putumayo">Putumayo</option>
-              <option value="Quindío" name="Quindío">Quindío</option>
-              <option value="Risaralda" name="Risaralda">Risaralda</option>
-              <option
-                value="San Andrés y Providencia"
-                name="San Andrés y Providencia"
-              >
+              <option value="Amazonas">Amazonas</option>
+              <option value="Antioquia">Antioquia</option>
+              <option value="Arauca">Arauca</option>
+              <option value="Atlántico">Atlántico</option>
+              <option value="Bolívar">Bolívar</option>
+              <option value="Boyacá">Boyacá</option>
+              <option value="Caldas">Caldas</option>
+              <option value="Caquetá">Caquetá</option>
+              <option value="Casanare">Casanare</option>
+              <option value="Cauca">Cauca</option>
+              <option value="Cesar">Cesar</option>
+              <option value="Chocó">Chocó</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Cundinamarca">Cundinamarca</option>
+              <option value="Guainía">Guainía</option>
+              <option value="Guaviare">Guaviare</option>
+              <option value="Huila">Huila</option>
+              <option value="La Guajira">La Guajira</option>
+              <option value="Magdalena">Magdalena</option>
+              <option value="Meta">Meta</option>
+              <option value="Nariño">Nariño</option>
+              <option value="Norte de Santander">Norte de Santander</option>
+              <option value="Putumayo">Putumayo</option>
+              <option value="Quindío">Quindío</option>
+              <option value="Risaralda">Risaralda</option>
+              <option value="San Andrés y Providencia">
                 San Andrés y Providencia
               </option>
-              <option value="Santander" name="Santander">Santander</option>
-              <option value="Sucre" name="Sucre">Sucre</option>
-              <option value="Tolima" name="Tolima">Tolima</option>
-              <option value="Valle del Cauca" name="Valle del Cauca">
-                Valle del Cauca
-              </option>
-              <option value="Vaupés" name="Vaupés">Vaupés</option>
-              <option value="Vichada" name="Vichada">Vichada</option>
+              <option value="Santander">Santander</option>
+              <option value="Sucre">Sucre</option>
+              <option value="Tolima">Tolima</option>
+              <option value="Valle del Cauca">Valle del Cauca</option>
+              <option value="Vaupés">Vaupés</option>
+              <option value="Vichada">Vichada</option>
             </select>
           </section>
 
-          <label for="telephone"
+          <label
             >Teléfono:
             <input type="number" name="userNumber" placeholder="333-444-5522"
           /></label>
-          <label for="description"
+          <label
             >Descripción personal:
             <textarea name="userDescription" maxlength="300"></textarea>
           </label>
@@ -114,18 +105,12 @@
           <section>
             <label>Que carrera quieres estudiar? </label>
             <select name="techStudy">
-              <option value="cloudNative" name="cloudNative">
-                Cloud Native
-              </option>
-              <option value="frontEnd" name="frontEnd">Front-End</option>
-              <option value="backEnd" name="backEnd">Back-End</option>
-              <option value="fundamentals" name="fundamentals">
-                Fundamentals
-              </option>
-              <option value="python" name="python">Python</option>
-              <option value="digitalMarketing" name="digitalMarketing">
-                Digital Marketing
-              </option>
+              <option value="cloudNative">Cloud Native</option>
+              <option value="frontEnd">Front-End</option>
+              <option value="backEnd">Back-End</option>
+              <option value="fundamentals">Fundamentals</option>
+              <option value="python">Python</option>
+              <option value="digitalMarketing">Digital Marketing</option>
             </select>
             <label>Modalidad </label>
             <select name="Modalidad">
@@ -133,7 +118,7 @@
               <option value="virtual">Virtual</option>
             </select>
             <label>¿Estas trabajando actualmente? </label>
-            <select name="yesNo">
+            <select name="JobYesNo">
               <option value="si">Si</option>
               <option value="no">No</option>
             </select>
