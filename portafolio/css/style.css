@@ -1,0 +1,151 @@
+:root {
+  --blue: #1a9af7;
+  --dark-blue: #175791;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --just-white: #ffffff;
+  --grey: #616161;
+  --green: #00b800;
+  --red: #ff2323;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--just-white);
+}
+
+header h1 {
+  color: var(--dark-blue);
+  padding-left: 1rem;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+header li {
+  list-style: none;
+  padding-right: 1rem;
+}
+header ul li a {
+  font-size: 1.2rem;
+  color: var(--dark-blue);
+  text-decoration: none;
+}
+
+main .presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding-top: 3rem;
+  padding-right: 2rem;
+  width: 100%;
+  min-width: 32rem;
+  height: 40vh;
+  background-image: url(../imgs/me.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.presentation span {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--just-white);
+}
+
+.presentation p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--just-white);
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+}
+
+.about-me img {
+  position: relative;
+  top: -5rem;
+  left: calc(50% - 5rem);
+  width: 10rem;
+  border-radius: 50%;
+  border: 0.3rem solid var(--just-white);
+}
+
+.about-me h2 {
+  width: 90%;
+  position: relative;
+  top: -3rem;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.about-me p {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-project {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-bottom: 2rem;
+  height: 32rem;
+  max-width: 36rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+}
+.card-project a {
+  width: 90%;
+  text-decoration: none;
+}
+.card-project a img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card-project a h3 {
+  margin: 0 auto;
+  font-size: 2rem;
+  color: var(--dark-blue);
+}
+
+.card-project a p {
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: var(--grey);
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
