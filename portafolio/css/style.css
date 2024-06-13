@@ -40,8 +40,9 @@ header ul {
 
 header li {
   list-style: none;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
 }
+
 header ul li a {
   font-size: 1.2rem;
   color: var(--dark-blue);
@@ -65,20 +66,20 @@ main .presentation {
 
 .presentation span {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: var(--just-white);
 }
 
 .presentation p {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.5rem;
   color: var(--just-white);
 }
 
 .about-me {
   display: flex;
   flex-direction: column;
-  height: 25rem;
+  height: auto;
 }
 
 .about-me img {
@@ -91,61 +92,126 @@ main .presentation {
 }
 
 .about-me h2 {
-  width: 90%;
   position: relative;
   top: -3rem;
-  margin: 0 auto;
   font-size: 2rem;
+  margin-left: 1rem;
 }
 
 .about-me p {
-  width: 90%;
   margin: 0 auto;
   position: relative;
   font-size: 1.5rem;
+  margin: 0 1rem;
 }
 
 .portfolio {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 2rem;
+}
+
+.portfolio-title {
+  align-items: start;
+  font-size: 2rem;
+  margin-left: 1.6rem;
+  padding-top: 2rem;
 }
 
 .card-project {
   width: 95%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding-bottom: 2rem;
-  height: 32rem;
-  max-width: 36rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  height: 36rem;
+  max-width: 26rem;
   border-radius: 0.8rem;
   box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
 }
 .card-project a {
-  width: 90%;
+  width: 100%;
   text-decoration: none;
 }
 .card-project a img {
-  margin: 0 auto;
+  position: relative;
+  top: 0;
   width: 100%;
+  height: 17rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
 }
 
 .card-project a h3 {
-  margin: 0 auto;
   font-size: 2rem;
+  padding-left: 1rem;
+  padding-top: 1.5rem;
   color: var(--dark-blue);
 }
 
 .card-project a p {
   margin: 0 auto;
   font-size: 1.2rem;
+  padding: 1rem;
   color: var(--grey);
 }
 
-.skill {
+.main-skills {
+  padding-bottom: 2rem;
+  background-color: var(--just-white);
+}
+
+.main-skills h2 {
+  align-items: start;
+  font-size: 2rem;
+  margin-left: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.skill-list {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  display: flex;
+}
+
+.skill-list .html {
+  width: 4rem;
+  height: 4rem;
+  background-image: url(../imgs/html.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0.5rem var(--grey));
+}
+
+.skill-list .css {
+  width: 4rem;
+  height: 4rem;
+  background-image: url(../imgs/css-3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0.5rem var(--grey));
+}
+
+.skill-list .javascript {
+  width: 4rem;
+  height: 4rem;
+  background-image: url(../imgs/js.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0.5rem var(--grey));
+}
+
+.skill-list .angular {
+  width: 4rem;
+  height: 4rem;
+  background-image: url(../imgs/angular.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: drop-shadow(0 0 0.5rem #8b8b8b);
 }
