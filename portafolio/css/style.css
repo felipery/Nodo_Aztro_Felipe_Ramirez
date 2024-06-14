@@ -288,3 +288,22 @@ textarea {
     color: var(--just-white);
   }
 }
+
+.social-media {
+  margin: 0 auto;
+  width: 30rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.social-media ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.social-media img {
+  width: 5rem;
+  height: 5rem;
+}
