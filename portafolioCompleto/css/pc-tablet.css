@@ -1,0 +1,32 @@
+html {
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.presentation span {
+  font-size: 6rem;
+}
+
+.presentation p {
+  font-size: 2.5rem;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.portfolio-title {
+  margin-left: 1rem;
+  padding-top: 2rem;
+}
+
+.skill-list .css,
+.skill-list .html,
+.skill-list .javascript,
+.skill-list .angular {
+  width: 6rem;
+  height: 6rem;
+}
