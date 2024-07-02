@@ -1,0 +1,159 @@
+:root {
+    --blue: #1a9af7;
+    --dark-blue: #175791;
+    --light-blue: #8bc6f0;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --just-white: #ffffff;
+    --grey: #616161;
+    --green: #00b800;
+    --red: #ff2323;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--blue);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem;
+}
+
+header img {
+    width: 20%;
+}
+
+header h1 {
+    color: var(--just-white);
+    font-size: 3rem;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    list-style: none;
+    padding-left: 2rem;
+
+}
+
+/* PROPIEDADES DE LA VISUAL DEL CIRCULO */
+
+.circulo .container-image {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: ;
+    background-image: url(../imgs/fondo_1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.circulo .container-image h1 {
+
+    padding: 7rem 3rem;
+    border-radius: 50%;
+    background-color: var(--just-white);
+    font-size: 2rem;
+}
+
+.circulo .container-image img {
+    height: 30rem;
+}
+
+.circulo .second-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--just-white);
+}
+
+.circulo .second-section__info {
+    display: flex;
+    gap: 2rem;
+}
+
+.circulo .second-section__info img {
+    height: 15rem;
+}
+
+.circulo .second-section__info .form-div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.circulo .second-section__info .form-div label {
+    font-size: 1.6rem;
+    color: var(--dark-blue);
+}
+
+.circulo .second-section__info .form-div input {
+    width: 18rem;
+    font-size: 1.6rem;
+    border: none;
+    background-color: var(--light-blue);
+    padding: .5rem;
+    border-radius: .8rem;
+    color: var(--just-white);
+
+
+    &::placeholder {
+        color: var(--just-white);
+        font-size: 1.6rem;
+
+    }
+}
+
+.circulo .second-section__info .value-out {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem
+}
+
+.circulo .second-section__info .value-out h3 {
+    font-size: 1.6rem;
+    color: var(--dark-blue);
+}
+
+.circulo .second-section__info .value-out .form-div-results {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.circulo .second-section__info .value-out .form-div-results label {
+    font-size: 1.6rem;
+    color: var(--dark-blue);
+}
+
+.circulo .second-section__info .value-out .form-div-results input {
+    font-size: 1.6rem;
+    border: none;
+    background-color: var(--light-blue);
+    padding: .5rem;
+    border-radius: .8rem;
+    color: var(--just-white);
+}
