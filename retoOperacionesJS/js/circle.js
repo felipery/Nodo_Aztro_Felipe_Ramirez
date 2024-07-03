@@ -1,41 +1,48 @@
-// Valida que el número ingresado no sea negativo o vacío
+// radio correcto
+
 function validaInputRadio(radio) {
-    if(isNaN(radio)) {
-        alert("Por favor ingresa números válidos.");
-        return false;
-    }else if(radio < 0) {
-        alert("No es válido. Por favor ingresa números positivos.");
-        return false;
-    }
-    return true;
+  if (isNaN(radio)) {
+    alert("Por favor ingresa números válidos.");
+    return false;
+  } else if (radio < 0) {
+    alert("No es válido. Por favor ingresa números positivos.");
+    return false;
+  }
+  return true;
 }
 
-// Función para calcular el área del circulo
+// calcular área
+
 function areaCircle() {
-    const PI = 3.14
-    let radioCircle = parseFloat(document.getElementById('radio-circle').value);
-    let resultAreaCircle = PI * Math.pow(radioCircle, 2);
-    document.getElementById('result-area-circle').value = resultAreaCircle;
+  let radioCircle = parseFloat(
+    document.getElementById("circle-ratio-input").value
+  );
+  let resultAreaCircle = (Math.PI * Math.pow(radioCircle, 2)).toFixed(2);
+  document.getElementById("circle-output-area").value = resultAreaCircle;
 }
 
-// Función para calcular el perimetro del circulo
+// calcular perímetro
 function perimetroCircle() {
-    const PI = 3.14
-    let radioCircle = parseFloat(document.getElementById('radio-circle').value);
-    let resultPerimetroCircle = 2 * PI * radioCircle;
-    document.getElementById('result-perimetro-circle').value = resultPerimetroCircle;
+  let radioCircle = parseFloat(
+    document.getElementById("circle-ratio-input").value
+  );
+  let resultPerimetroCircle = (2 * Math.PI * radioCircle).toFixed(2);
+  document.getElementById("circle-output-perimeter").value =
+    resultPerimetroCircle;
 }
 
-// Funcion para calcular área y perímetro del circulo
+// recibo datos
 function calcularCircle() {
-    let radioCircle = parseFloat(document.getElementById('radio-circle').value);
-    if (validaInputRadio(radioCircle)) {
-        areaCircle();
-        perimetroCircle();
-    }else {
-        // Limpiar el input si la validación falla
-        document.getElementById('radio-circle').value = "";
-        document.getElementById('result-area-circle').value = "";
-        document.getElementById('result-perimetro-circle').value = "";
-    }
+  let radioCircle = parseFloat(
+    document.getElementById("circle-ratio-input").value
+  );
+  if (validaInputRadio(radioCircle)) {
+    areaCircle();
+    perimetroCircle();
+  } else {
+    // Limpiar el input si la validación falla
+    document.getElementById("circle-ratio-input").value = "";
+    document.getElementById("circle-output-area").value = "";
+    document.getElementById("circle-output-perimeter").value = "";
+  }
 }

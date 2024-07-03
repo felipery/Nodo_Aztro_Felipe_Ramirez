@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&family=Inter:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Circulo</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-main">
+        <img src="../imgs/logoNdoprincipal.svg" alt="Logo Nodo Eafit" />
+        <h1>Felipe Noder!🚀</h1>
+      </div>
+      <span><a href="../index.html">Home</a></span>
+    </header>
+    <main class="main-circle">
+      <section class="title-img">
+        <h2 class="circle-h2">Círculo</h2>
+        <img src="../imgs/superhero.png" alt="imagen de super héroe" />
+      </section>
+      <section class="calc">
+        <img src="../imgs/circulo.png" alt="imagen de fórmulas de círculo" />
+        <section class="calc__input">
+          <form action="">
+            <legend>Ingrese los datos (cm)</legend>
+            <label for=""
+              ><input
+                type="number"
+                name=""
+                id="circle-ratio-input"
+                placeholder="Ingrese el radio del círculo"
+                required
+            /></label>
+          </form>
+        </section>
+        <section class="calc__output">
+          <legend>Resultados</legend>
+          <label for="">Área</label>
+          <input type="number" id="circle-output-area" readonly />
+          <label for="">Perímetro</label>
+          <input type="text" id="circle-output-perimeter" readonly />
+        </section>
+      </section>
+      <button class="btn-calc" onclick="calcularCircle()">Calcular</button>
+    </main>
+    <script src="../js/circle.js"></script>
+  </body>
+</html>
