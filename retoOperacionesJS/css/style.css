@@ -126,6 +126,13 @@ main .index-h2 {
   filter: drop-shadow(0 0 1rem #fff);
 }
 
+.title-img .rect-h2 {
+  padding: 2.5rem 1rem;
+  background-color: var(--just-white);
+  color: var(--dark-blue);
+  filter: drop-shadow(0 0 1rem #fff);
+}
+
 .calc {
   display: flex;
   justify-content: center;
