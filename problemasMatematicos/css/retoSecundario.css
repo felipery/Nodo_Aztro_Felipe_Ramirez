@@ -71,21 +71,3 @@ html {
     }
   }
 }
-
-.div-title {
-  height: 40rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-main h1 {
-  font-family: "Jersey 20 Charted", sans-serif;
-  font-size: 7rem;
-  color: var(--just-white);
-}
-
-.title {
-  color: var(--just-white);
-  text-shadow: 0 1rem 1rem var(--dark-blue);
-}
