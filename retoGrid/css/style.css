@@ -1,0 +1,96 @@
+:root {
+    --blue: #1a9af7;
+    --dark-blue: #175791;
+    --warm-black: #201e1c;
+    --black: #282623;
+    --just-white: #ffffff;
+    --grey: #616161;
+    --green: #00b800;
+    --red: #ff2323;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "DM Sans", sans-serif;
+    background-color: var(--blue);
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem 10rem;
+    gap: 5px;
+    
+  }
+
+  .one {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .two{
+    grid-column: 2;
+    grid-row: 1 / 2;
+  }
+
+.three {
+    grid-column: 3 / 4;
+    grid-row: 1 ;
+}
+
+.four {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.five {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.six {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.seven {
+    grid-column: 1;
+    grid-row: 3 / 4;
+}
+
+.eight {
+    grid-column: 2/ 3;
+    grid-row: 3;
+}
+
+.nine {
+    grid-column: 4;
+    grid-row: 3 / 4;
+}
+
+.ten {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+.eleven {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.cards-container img {
+    width: 10rem;
+    image;
+}
+
+
+
+
+
+
+
