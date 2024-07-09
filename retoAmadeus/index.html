@@ -13,18 +13,33 @@
     <title>AmaCations</title>
   </head>
   <body>
-    <header><img src="amadeus-logo-dark-sky.png" alt="logo amadeus" /></header>
-    <main>
-      <h1>amaCATIONS</h1>
-      <section>
-        <div><h2>¿Qué tipo de entorno prefieres para tus vacaciones?</h2></div>
-        <div class="cards-container">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
+    <section class="container">
+      <h2>¿Qué tipo de entorno prefieres para tus vacaciones?</h2>
+      <form id="formQuestion1">
+        <div class="card" onclick="selectOption('city')">
+          <div class="card-image city"></div>
+          <label>
+            <input type="radio" name="option" value="city" id="city" />
+            City
+          </label>
         </div>
-      </section>
-    </main>
-    <footer></footer>
+        <div class="card" onclick="selectOption('beach')">
+          <div class="card-image beach"></div>
+          <label>
+            <input type="radio" name="option" value="beach" id="beach" />
+            Beach
+          </label>
+        </div>
+        <div class="card" onclick="selectOption('mountain')">
+          <div class="card-image mountain"></div>
+          <label>
+            <input type="radio" name="option" value="mountain" id="mountain" />
+            Mountain
+          </label>
+        </div>
+        <button type="button" onclick="saveAnswer()">Next</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>

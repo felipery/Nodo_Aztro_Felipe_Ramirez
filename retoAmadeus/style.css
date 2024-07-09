@@ -15,5 +15,80 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Unica One", sans-serif;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  display: inline-block;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 0.8rem;
+  width: 25rem;
+  height: 25rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.315);
+}
+
+.card-image {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.8rem;
+}
+
+.card-image.city {
+  background-image: url(./imgs/city.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-image.beach {
+  background-image: url(./imgs/playa.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-image.mountain {
+  background-image: url(./imgs/mountain.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+label {
+  display: block;
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
 }
