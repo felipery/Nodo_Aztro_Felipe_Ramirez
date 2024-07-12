@@ -21,18 +21,94 @@
       </div>
       <nav class="nav-bar">
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/retoPrincipal.html">Reto Principal</a></li>
-          <li><a href="./pages/retoSecundario.html">Reto Secundario</a></li>
-          <li><a href="./pages/retoAlterno.html">Reto Alterno</a></li>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="div-title">
+      <section class="div-title">
         <h1 class="title slide-fwd-center">Lets Do some MATH!</h1>
-      </div>
+      </section>
+      <section class="excercise1">
+        <h2>Ejercicio 1</h2>
+        <p>
+          Un nadador necesita conocer el promedio final de tiempo que gasta en
+          recorrer una piscina de 100 metros, sabiendo que en el día realiza
+          cinco pruebas medidas en segundos.
+        </p>
+        <form action="">
+          <legend>Datos en segundos</legend>
+          <input
+            type="number"
+            placeholder="Ingrese primer tiempo"
+            class="input-on"
+            id="time1"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese segundo tiempo"
+            class="input-on"
+            id="time2"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese tercer tiempo"
+            class="input-on"
+            id="time3"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese cuarto tiempo"
+            class="input-on"
+            id="time4"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese quinto tiempo"
+            class="input-on"
+            id="time5"
+          />
+        </form>
+        <div class="result1">
+          <input type="button" value="Calcular" onclick="exercise1()" />
+          <label for="">Resultado</label>
+          <input
+            type="number"
+            readonly
+            class="input-on input-off"
+            id="result1"
+          />
+        </div>
+      </section>
+      <section class="excercise2">
+        <h2>Ejercicio 2</h2>
+        <p>
+          Un agrónomo desea una forma rápida de encontrar cuantos litros de
+          pesticida debe aplicar a un conjunto de terrenos de forma trapezoidal,
+          si por cada metro cuadrado debe aplicar 1.5 litros de pesticida.
+          Además le piden que determine cuantos metros de cerca eléctrica son
+          necesarios para rodear todo el terreno.
+        </p>
+      </section>
+      <form action="">
+        <legend>Ingrese los datos</legend>
+        <input type="number" name="" id="inputTwo1" /><input
+          type="number"
+          name=""
+          id="inputTwo2"
+        /><input type="number" name="" id="inputTwo3" /><input
+          type="number"
+          name="inputTwo4"
+          id=""
+        /><input type="number" name="" id="" />
+      </form>
     </main>
     <footer></footer>
+    <script src="./js/excercise1.js"></script>
   </body>
 </html>
