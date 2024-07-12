@@ -73,17 +73,18 @@
             class="input-on"
             id="time5"
           />
+          <div class="result1">
+            <input type="button" value="Calcular" onclick="exercise1()" />
+            <label for="">Resultado</label>
+            <input
+              type="number"
+              readonly
+              class="input-on input-off"
+              id="result1"
+            />
+          </div>
+          <input type="reset" value="Borrar" class="eraser" />
         </form>
-        <div class="result1">
-          <input type="button" value="Calcular" onclick="exercise1()" />
-          <label for="">Resultado</label>
-          <input
-            type="number"
-            readonly
-            class="input-on input-off"
-            id="result1"
-          />
-        </div>
       </section>
       <section class="excercise2">
         <h2>Ejercicio 2</h2>
@@ -94,21 +95,148 @@
           Además le piden que determine cuantos metros de cerca eléctrica son
           necesarios para rodear todo el terreno.
         </p>
+        <form action="">
+          <legend>Ingrese los datos</legend>
+          <input
+            type="number"
+            id="input2-base-1"
+            placeholder="Ingrese base 1"
+          /><input
+            type="number"
+            id="input2-base-2"
+            placeholder="Ingrese base 2"
+          /><input
+            type="number"
+            id="input2-altura"
+            placeholder="Ingrese altura"
+          /><input
+            type="number"
+            id="input2-lado1"
+            placeholder="Ingrese lado 1"
+          />
+          <input type="number" id="input2-lado2" placeholder="Ingese lado 2" />
+          <div class="result2">
+            <input type="button" value="Calcular" onclick="exercise2()" />
+            <label for="">Área</label>
+            <input
+              type="number"
+              readonly
+              class="input-on input-off"
+              id="input2-area"
+            />
+            <label for="">Litros necesarios</label>
+            <input
+              type="number"
+              readonly
+              class="input-on input-off"
+              id="input2-litros"
+            />
+          </div>
+          <label for="">Perímetro</label>
+          <input
+            type="number"
+            readonly
+            class="input-on input-off"
+            id="input2-perimetro"
+          />
+          <input type="reset" value="Borrar" class="eraser" />
+        </form>
       </section>
-      <form action="">
-        <legend>Ingrese los datos</legend>
-        <input type="number" name="" id="inputTwo1" /><input
-          type="number"
-          name=""
-          id="inputTwo2"
-        /><input type="number" name="" id="inputTwo3" /><input
-          type="number"
-          name="inputTwo4"
-          id=""
-        /><input type="number" name="" id="" />
-      </form>
+      <section class="exercise3">
+        <h2>Ejercicio 3</h2>
+        <p>
+          Un maestro de obra quiere emplear una forma rápida de poder calcular
+          el número de ladrillos que necesita para una pared ¿Puedes ayudarlo?
+        </p>
+        <p>
+          Toma en cuenta el espacio del mortero entre los ladrillos (es la unión
+          entre ladrillos)
+        </p>
+        <form action="">
+          <legend>Ingrese los datos</legend>
+          <label for="">Datos Pared</label>
+          <input
+            type="number"
+            id="input3-alturaPared"
+            placeholder="Ingrese altura pared"
+          />
+          <input
+            type="number"
+            id="input3-anchoPared"
+            placeholder="Ingrese el ancho de la pared"
+          />
+          <label for="">Datos Ladrillos</label>
+          <input
+            type="number"
+            id="input3-alturaLadrillo"
+            placeholder="Ingrese altura ladrillo"
+          />
+          <input
+            type="number"
+            id="input3-anchoLadrillo"
+            placeholder="Ingrese ancho del ladrillo"
+          />
+          <input
+            type="number"
+            id="input3-mortero"
+            placeholder="Ingrese ancho mortero"
+          />
+
+          <div class="result3">
+            <input type="button" value="Calcular" onclick="exercise3()" />
+            <label for="">Área de la Pared</label>
+            <input
+              type="number"
+              readonly
+              class="input-on input-off"
+              id="input3-areaPared"
+            />m²
+            <label for="">Área ladrillo</label>
+            <input
+              type="number"
+              readonly
+              class="input-on input-off"
+              id="input3-areaLadrillo"
+            />m²
+            <label for="">Numero de ladrillos</label>
+            <input
+              type="number"
+              readonly
+              class="input-on input-off"
+              id="input3-numeroLadrillos"
+            />
+          </div>
+          <input type="reset" value="Borrar" class="eraser" />
+        </form>
+      </section>
+      <section class="excercise4">
+        <h2>Ejercicio 4</h2>
+        <p>
+          Un nutricionista necesita saber el índice de masa corporal (IMC) de
+          una persona para determinar su estado físico. Sin embargo pierde mucho
+          tiempo haciendo el cálculo. ¿Puedes desarrollar un programa usando JS
+          para ayudarlo?
+        </p>
+        <form action="">
+          <legend>Ingrese los datos</legend>
+          <input
+            type="number"
+            id="input4-peso"
+            placeholder="Ingrese peso en kg"
+          />
+          <input
+            type="number"
+            id="input4-altura"
+            placeholder="Ingrese altura"
+          />
+          <div class="result4"></div>
+        </form>
+      </section>
     </main>
     <footer></footer>
     <script src="./js/excercise1.js"></script>
+    <script src="./js/excercise2.js"></script>
+    <script src="./js/excercise3.js"></script>
+    <script src="./js/excercise4.js"></script>
   </body>
 </html>
