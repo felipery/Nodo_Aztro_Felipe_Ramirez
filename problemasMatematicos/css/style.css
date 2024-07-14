@@ -8,6 +8,7 @@
   --grey: #616161;
   --green: #00b800;
   --red: #ff2323;
+  --light-red: #ff7c7c;
 }
 
 * {
@@ -49,28 +50,32 @@ html {
   width: 100%;
   height: 5rem;
   background-color: var(--just-white);
+}
 
-  & ul {
-    display: flex;
-
-    & li {
-      list-style: none;
-      font-size: 2rem;
-      color: var(--dark-blue);
-      padding: 0 2rem;
-      &:hover {
-        background-color: var(--dark-blue);
-        color: var(--just-white);
-      }
-    }
+span a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--dark-blue);
+  &:hover {
+    padding: 1.2rem;
+    background-color: var(--dark-blue);
+    color: var(--just-white);
   }
 }
 
 .div-title {
-  height: 40rem;
+  height: 10rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+main {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 main h1 {
@@ -82,4 +87,69 @@ main h1 {
 .title {
   color: var(--just-white);
   text-shadow: 0 1rem 1rem var(--dark-blue);
+}
+
+form {
+  background-color: var(--light-blue);
+  padding: 0.5rem 1rem 2rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: var(--just-white);
+  padding-bottom: 1rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: var(--just-white);
+  background-color: var(--dark-blue);
+  padding: 1rem;
+  border-radius: 0.8rem 0.8rem 0 0;
+}
+
+legend {
+  font-size: 1.6rem;
+  color: var(--dark-blue);
+}
+
+input {
+  width: 13rem;
+  padding: 0.4rem;
+  border: none;
+  border-radius: 0.8rem;
+  margin: 0.4rem;
+}
+
+label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+input[type="button"] {
+  background-color: var(--dark-blue);
+  color: var(--just-white);
+  border-radius: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--blue);
+  }
+}
+
+input[type="reset"] {
+  background-color: var(--red);
+  color: var(--just-white);
+  border-radius: 0;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--light-red);
+  }
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
